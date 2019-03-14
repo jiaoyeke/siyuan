@@ -1,0 +1,65 @@
+<!--pages/index2/index2.wxml-->
+<!-- 关于我们 -->
+<view class='nav_two'>
+  <view class='gywm'>
+      <text class='one'>--  </text>
+      <text class='two'>关于我们</text>
+      <text class='three'>  --</text>
+  </view>
+  <view class='img_one' wx:for="{{guanyulist}}" wx:key="index">
+    <image src='{{item.img_url}}'></image>
+  </view>
+  <!-- 分割条1 -->
+  <view class='fenge'></view>
+  <!-- 学校概况 -->
+  <view class='gywm'>
+      <text class='one'>--  </text>
+      <text class='two'>学校概况</text>
+      <text class='three'>  --</text>
+  </view>
+  <view class='img_two' wx:for="{{gaikuanglist}}" wx:key="index">
+    <image src='{{item.img_url}}' ></image>
+    <view>{{item.title}}</view>
+  </view>
+  <!-- 分割条1 -->
+  <view class='fenge'></view>
+  <!-- 校园风采 -->
+  <view class='gywm'>
+    <text class='one'>--  </text>
+    <text class='two'>校园风采</text>
+    <text class='three'>  --</text>
+  </view>
+  <view class='xyfc'>
+    <view class='xyfc_item one' wx:for="{{xiaoyuanlist}}" wx:key="index">
+      <image src='{{item.img_url}}' data-id="{{item.id}}"></image>
+      <view>{{item.title}}</view>
+    </view>
+    <!-- <view class='xyfc_item two'>
+      <image src='/pages/img/xx2.png'></image>
+      <view>实验楼</view>
+    </view>
+    <view class='xyfc_item three'>
+      <image src='/pages/img/xx3.png'></image>
+      <view>校园一角</view>
+    </view>
+    <view class='xyfc_item four'>
+      <image src='/pages/img/xx4.png'></image>
+      <view>教室一角</view>
+    </view> -->
+  </view>
+  <!-- 分割条1 -->
+  <view class='fenge'></view>
+  <!-- 联系我们 -->
+  <view class='gywm'>
+    <text class='one'>--  </text>
+    <text class='two'>联系我们</text>
+    <text class='three'>  --</text>
+  </view>
+  <view class='zhaosheng'>
+    <text>招生电话</text>
+    <text>010-1234567</text>
+    <text>地址：北京市朝阳区东三环</text>
+    <text>邮箱：jiaoyeke@126.com</text>
+    <text>QQ：78945612</text>
+  </view>
+</view>

@@ -1,0 +1,147 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 轮播图 -->
+  <view class='slider'>
+    <swiper autoplay>
+      <swiper-item wx:for="{{list}}" wx:key="index">
+        <image src="{{item.img_url}}" lazy-load mode='aspectFill'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+    <!-- 分割条1 -->
+    <view class='fenge'></view>
+  <!-- 四宫格 -->
+  <view class='index-nav'>
+    <view class='nav-item' wx:for="{{navlist}}" wx:key="index">
+      <image src='{{item.img_url}}' data-id="{{item.id}}" bindtap='handleJump'></image>
+      <text>{{item.title}}</text>
+    </view>
+    <!-- <view class='nav-item'>
+      <image src='/pages/img/i2.png'></image>
+      <text>校园资讯</text>
+    </view>
+    <view class='nav-item'>
+      <image src='/pages/img/i3.png'></image>
+      <text>教学展示</text>
+    </view>
+    <view class='nav-item'>
+      <image src='/pages/img/i4.png'></image>
+      <text>联系我们</text>
+    </view> -->
+  </view>
+  <!-- 分割条2 -->
+  <view class='fenge'></view>
+  <!-- 学校优势 -->
+  <view class='xxys'>
+    <text class='one'>--  </text>
+    <text class='two'>学校优势</text>
+    <text class='three'>  --</text>
+  </view>
+  <!-- 校车接送 1 2 3 -->
+  <view class='xiaoche' wx:for="{{xiaochelist}}" wx:key="index">
+    <view class='img_l' >
+      <image src='{{item.img_url}}'></image>
+    </view>
+    <view class='img_r'>
+      <text class='text_shang'>{{item.title}}</text>    
+    </view>
+    <view class='text_xia'>
+      <text >{{item.title2}}</text>
+    </view> 
+  </view>
+  <!-- <view class='xiaoche'>
+    <view class='img_l'>
+      <image src='/pages/img/xxys1.png'></image>
+    </view>
+    <view class='img_r'>
+      <text class='text_shang'>课程丰富</text>    
+    </view>
+    <view class='text_xia'>
+      <text >多种热门课程助您的孩子学习，接送学生车辆安全涉及千家万户。</text>
+    </view> 
+  </view>
+  <view class='xiaoche'>
+    <view class='img_l'>
+      <image src='/pages/img/xxys3.png'></image>
+    </view>
+    <view class='img_r'>
+      <text class='text_shang'>名校保障</text>     
+    </view>
+    <view class='text_xia'>
+      <text >培养人才的目标，我认为首先应该注重人格的陶冶，做一个堂堂正正的“人”。</text>
+    </view>
+  </view> -->
+  <!-- 分割条3 -->
+  <view class='fenge'></view>
+  <!-- 名师展示 -->
+  <view class='xxys'>
+    <text class='one'>--  </text>
+    <text class='two'>名师展示</text>
+    <text class='three'>  --</text>
+  </view>
+  <view class='mszs'>
+    <view class='mszs_one item' wx:for="{{laoshilist}}" wx:key="index">
+      <image src='{{item.img_url}}' data-id="{{item.id}}"></image>
+      <view>{{item.title}}</view>
+      <view>{{item.title2}}</view>
+    </view>
+    <!-- <view class='mszs_two item'>
+      <image src='/pages/img/laoshi/ls3.jpg'></image>
+      <view>周老师</view>
+      <view>数学老师</view>
+    </view>
+    <view class='mszs_three item'>
+      <image src='/pages/img/laoshi/ls2.jpg'></image>
+      <view>王老师</view>
+      <view>生物老师</view>
+    </view> -->
+  </view>
+  <!-- <view class="page-section-spacing">
+    <scroll-view class="scroll-view_H" scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <view id="demo1" class="scroll-view-item_H demo-text-1">
+        <image src='/pages/img/laoshi/ls.jpg'></image>
+        <view>黄老师</view>
+        <view>历史老师</view>
+      </view>
+      <view id="demo2"  class="scroll-view-item_H demo-text-2">
+        <image src='/pages/img/laoshi/ls.jpg'></image>
+        <view>黄老师</view>
+        <view>历史老师</view>
+      </view>
+      <view id="demo3" class="scroll-view-item_H demo-text-3">
+        <image src='/pages/img/laoshi/ls.jpg'></image>
+        <view>黄老师</view>
+        <view>历史老师</view>
+      </view>
+    </scroll-view>
+  </view> -->
+  <!-- 分割条 -->
+  <view class='fenge'></view>
+  <!-- 校园风采 -->
+  <view class='xxys'>
+    <text class='one'>--  </text>
+    <text class='two'>校园风采</text>
+    <text class='three'>  --</text>
+  </view>
+  <view class='xyfc'>
+    <view class='xyfc_item one' wx:for="{{xiaoyuanlist}}" wx:key="index">
+      <image src='{{item.img_url}}'></image>
+      <view>{{item.title}}</view>
+    </view>
+    <!-- <view class='xyfc_item two'>
+      <image src='/pages/img/xx2.png'></image>
+      <view>实验楼</view>
+    </view>
+    <view class='xyfc_item three'>
+      <image src='/pages/img/xx3.png'></image>
+      <view>校园一角</view>
+    </view>
+    <view class='xyfc_item four'>
+      <image src='/pages/img/xx4.png'></image>
+      <view>教室一角</view>
+    </view> -->
+  </view>
+  <view bindtap='tel'>
+    <image class='tel' mode='aspectFit' src='/pages/img/phone.png'></image>
+  </view>
+</view>

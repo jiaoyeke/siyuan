@@ -1,0 +1,17 @@
+<!--pages/index4/index4.wxml-->
+<!-- 新闻资讯 -->
+<view class='xinwen'>
+  <view class='xxys'>
+    <text class='one'>--  </text>
+    <text class='two'>新闻资讯</text>
+    <text class='three'>  --</text>
+  </view>
+  <!-- 分割条2 -->
+  <view class='fenge'></view>
+  <view class='xw_item' wx:for="{{rows}}" wx:key="index" bindtap='newItem'>
+    <image src='{{item.img_url}}'></image>
+    <view class='xw_item_one xw_items'>{{item.name}}</view>
+    <view class='xw_item_two xw_items'><text>{{item.title}}</text></view>
+    <view class='xw_item_three xw_items'>{{item.time}}</view>
+  </view>
+</view>

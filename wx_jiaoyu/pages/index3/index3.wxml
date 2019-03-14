@@ -1,0 +1,16 @@
+<!--pages/index3/index3.wxml-->
+<view class='zhanshi'>
+  <!-- 教学展示 -->
+  <view class='xxys'>
+    <text class='one'>--  </text>
+    <text class='two'>教学展示</text>
+    <text class='three'>  --</text>
+  </view>
+  <!-- 分割条2
+  <view class='fenge'></view> -->
+  <view class="box" >
+    <video src="{{item.img_url}}" wx:for="{{shipinlist}}" wx:key="index">
+    </video>
+    <view class='youer'>幼儿教学视频展示</view>
+  </view>
+</view>

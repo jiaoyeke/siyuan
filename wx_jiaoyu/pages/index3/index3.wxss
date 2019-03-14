@@ -1,0 +1,28 @@
+/* pages/index3/index3.wxss */
+.xxys{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 33rpx;
+  border-bottom: 1px solid #f0f0f0;
+  
+}
+.xxys .one,.three{
+  color: #999;
+}
+/* .fenge{
+  height: 15rpx;
+  width: 100%;
+  background: #eee;
+} */
+.box video{
+  width: 100%;
+  height: 500rpx;
+  margin-top: 10rpx;
+}
+.youer{
+  margin-top: 15rpx;
+  font-size: 32rpx;
+  margin-left: 15rpx;
+}

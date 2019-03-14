@@ -1,0 +1,27 @@
+<!--pages/newlist/newlist.wxml-->
+<view class='index4_item' >
+  <view class='wzxq'>
+    <text class='one'>--  </text>
+    <text class='two'>文章详情</text>
+    <text class='three'>  --</text>
+  </view>
+  <view wx:for="{{newlist}}" wx:key="index">
+    <view class='content_one' >
+      <text>{{item.title}}</text>
+    </view>
+    <view class='content_two'>
+      <text decode="{{true}}" space="{{true}}">{{item.title2}}&nbsp;&nbsp;&nbsp;&nbsp;</text>
+      <text>{{item.title3}}</text>
+    </view>
+    <view class='content_three'>
+      <text decode="{{true}}" space="{{true}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;{{item.title4}}
+      </text>
+    </view>
+    <view class='content_threes'>
+      <text decode="{{true}}" space="{{true}}">
+        &nbsp;&nbsp;&nbsp;&nbsp;{{item.title5}}
+      </text>
+    </view>
+  </view>  
+</view>

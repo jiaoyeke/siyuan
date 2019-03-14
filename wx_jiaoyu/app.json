@@ -1,0 +1,45 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/index4/index4",
+    "pages/newlist/newlist",
+    "pages/xxxx/xxxx",
+    "pages/logs/logs",
+    "pages/index3/index3",
+    "pages/laoshilist/laoshilist"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ff6600",
+    "navigationBarTitleText": "思 源 教 育",
+    "navigationBarTextStyle": "#fff"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/pages/img/000002.png",
+        "selectedIconPath": "/pages/img/000003.png"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "关于我们",
+        "iconPath": "/pages/img/0000042.png",
+        "selectedIconPath": "/pages/img/0000043.png"
+      },
+      {
+        "pagePath": "pages/index3/index3",
+        "text": "教学展示",
+        "iconPath": "/pages/img/0000012.png",
+        "selectedIconPath": "/pages/img/0000013.png"
+      },
+      {
+        "pagePath": "pages/index4/index4",
+        "text": "校园资讯",
+        "iconPath": "/pages/img/0000022.png",
+        "selectedIconPath": "/pages/img/0000023.png"
+      }
+    ]
+  }
+}
